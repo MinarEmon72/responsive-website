@@ -206,9 +206,14 @@ hr {
     font-family: 'Poppins';
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 40px;
+    padding-top: 30px;
+
 }
 
-.footer-info div {
+.footer-info div a {
+    text-decoration: none;
+    color: #B9B9B9;
     font-weight: 500;
     padding: 30px;
 }
@@ -223,4 +228,53 @@ hr {
     margin: 0 14px;
     color: white;
     font-size: 25px;
+}
+
+/* ---------------
+   Media Queries 
+-----------------*/
+
+/* ----------------
+     Mobile View 
+  ----------------*/
+@media only screen and (max-width:688px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        margin-left: 0;
+        height: 800px;
+    }
+
+    .top-banner {
+        position: relative;
+        text-align: center;
+        width: 50%;
+    }
+
+    .banner-title {
+        font-size: 30px;
+    }
+
+    .main-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+        margin-top: 50px;
+        padding-right: 50px;
+    }
+
+    footer {
+        margin-top: 2800px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+    }
 }
